@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
 }
 
 body {
@@ -14,7 +14,8 @@ body {
   color: #ffffff;
 }
 
-/* App Container acting like a mobile viewport */
+
+
 .app-container {
   width: 375px;
   height: 812px;
@@ -27,19 +28,17 @@ body {
   border: 8px solid #2d2d2d;
 }
 
-/* Scrollable area for UI contents so the nav bar stays sticky */
+
 .content-scroll {
   flex: 1;
   overflow-y: auto;
   padding: 20px 16px 100px 16px; /* Extra bottom padding so items aren't hidden behind the nav bar */
 }
 
-/* Hide scrollbars for clean UI look */
 .content-scroll::-webkit-scrollbar {
   display: none;
 }
 
-/* --- Card Styles --- */
 .workout-section {
   margin-bottom: 24px;
 }
@@ -82,7 +81,6 @@ body {
   font-weight: 500;
 }
 
-/* --- Navigation Bar Styles --- */
 .bottom-nav {
   position: absolute;
   bottom: 12px;
@@ -90,7 +88,6 @@ body {
   right: 12px;
   height: 75px;
   
-  /* Modern Frosted Glass Effect using Linear Gradients matching the colors in your image */
   background: linear-gradient(135deg, rgba(135, 206, 235, 0.5), rgba(211, 211, 211, 0.6) 40%, rgba(255, 182, 193, 0.5));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -113,7 +110,6 @@ body {
   transition: transform 0.2s;
 }
 
-/* Container for active icon style */
 .icon-wrapper {
   width: 44px;
   height: 44px;
